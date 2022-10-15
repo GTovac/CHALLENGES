@@ -51,7 +51,7 @@ public class ReservationController {
         return reservationService.delete(idReservation);
     }
 
-    @GetMapping("/Report-status")
+    @GetMapping("/report-status")
     public ReservationReport getReservationStatusReport() {
         return reservationService.getReservationStatusReport();
     }
