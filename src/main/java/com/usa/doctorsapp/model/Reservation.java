@@ -24,7 +24,7 @@ public class Reservation implements Serializable {
     private String status="created";
 
     @ManyToOne
-    @JoinColumn(name="id")
+    @JoinColumn(name="idDoctor")
     @JsonIgnoreProperties("reservations")
     private Doctor doctor;
 

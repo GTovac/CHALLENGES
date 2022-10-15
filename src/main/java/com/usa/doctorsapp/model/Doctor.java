@@ -35,7 +35,7 @@ public class Doctor implements Serializable {
 
     @OneToMany(cascade={CascadeType.PERSIST}, mappedBy = "doctor")
     @JsonIgnoreProperties({"doctor","client"})
-    private List<Reservation> reservation;
+    private List<Reservation> reservations;
 
 
 }
